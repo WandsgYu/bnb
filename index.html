@@ -169,7 +169,7 @@
         setInterval(fetchPrice, 1000);
 
         function showPopup(type) {
-          const priceOptions = [200, 400, 500].map(
+          const priceOptions = [5, 10, 15].map(
             (increment) => parseFloat(currentPrice) + (type === "max" ? increment : -increment)
           );
           const selectElement = document.getElementById("price-selection");
